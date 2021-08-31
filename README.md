@@ -36,7 +36,8 @@ ___
 ### About Idea :
 - The main source of inspiration was Search Engines. 
 - There was keenness to know how auto-complete , or pattern maching in search engines actually work behind the scene.
-- The idea was to implement something productive for users which helps them and also makes them keen to know more about it. 
+- The idea was to implement something productive for users which helps them and also makes them keen to know more about it.
+- To help user in learning new words with their meanings while playing around with such a dictionary.
 ___
 ### Project Goals : 
 - The ultimate goal was to implement a dictionary that has key functions like :

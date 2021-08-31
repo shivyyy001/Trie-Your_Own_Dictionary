@@ -31,7 +31,7 @@ there are words like an, and, ans, are, be, bat present in this above trie.
 #### Why Tries over HashMaps for dictionary implementation ?
 - Lets say the user needs to store thousands of words starting with 'a' . HashMaps has to store all the thousand words in it starting with 'a' , whereas Tries has to store only one Node for character 'a' , thus space gets optimised.
 - Pattern matching and Auto-complete are amazing features of Tries . If these features are aimed to be implemented in HashMaps , then the runtime complexities will be more in HashMaps as we then need to traverse Full HashMap and the words in it as well.
-- Tries gives out data (words) in sorted manner when printed , but Unordered Maps gives out data in unsorted manner and Ordered Maps has more runtime complexity than Tries to keep the data sorted inside it.
+- Tries can provide an alphabetical ordering of the entries by key ,meaning they give out data (words) in sorted manner when printed, but Unordered Maps gives out data in unsorted manner and Ordered Maps has more runtime complexity than Tries to keep the data sorted inside it.
 ___
 
 ### About Idea :

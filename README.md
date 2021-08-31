@@ -106,7 +106,7 @@ ___
 ###### For Trie.h file ->
 - Create a file named Trie.h in your Linux Machine using the following command :<br>
 ``` vim Trie.h ```.
-- Go to insert mode in your file by pressing ``` i ``` and then copy the content of Trie.h file from this repository to that file which you have created.
+- Go to insert mode in your file by pressing ``` i ``` and then copy the content of Trie.h file from this repository and paste in that file which you have just created.
 - Save your file using the following command :<br>
 ``` Press Esc key ``` to go to Command mode. Then type ``` :wq ``` and ``` press Enter key ``` to save the file.
 - Compile your file using command : ``` gcc Trie.h ```.
@@ -114,7 +114,7 @@ ___
 ###### For Main_Function.c file ->
 - Next Create a file named Main_Function.c in your Linux Machine using the following command :<br>
 ``` vim Main_Function.c ```.
-- Go to insert mode in your file by pressing ``` i ``` and then copy the content of Main_Function.c file from this repository to that file which you have created.
+- Go to insert mode in your file by pressing ``` i ``` and then copy the content of Main_Function.c file from this repository and paste in that file which you have just created.
 - Save your file using the following command :<br>
 ``` Press Esc key ``` to go to Command mode. Then type ``` :wq ``` and ``` press Enter key ``` to save the file.
 - Compile your file using command : ``` gcc Main_Function.c ```.

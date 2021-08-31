@@ -21,6 +21,7 @@ there are words like an, and, ans, are, be, bat present in this above trie.
 - Auto-Complete
 - Pattern Matching
 - Text Search
+- Browser History
 - Spell Checkers or Auto-Correct
 
 #### Note !! :

@@ -33,6 +33,11 @@ there are words like an, and, ans, are, be, bat present in this above trie.
 - Tries gives out data (words) in sorted manner when printed , but Unordered Maps gives out data in unsorted manner and Ordered Maps has more runtime complexity than Tries to keep the data sorted inside it.
 ___
 
+### About Idea :
+- The main source of inspiration was Search Engines. 
+- There was keenness to know how auto-complete , or pattern maching in search engines actually work behind the scene.
+- The idea was to implement something productive for users which helps them and also makes them keen to know more about it. 
+___
 ### Project Goals : 
 - The ultimate goal was to implement a dictionary that has key functions like :
      - Adding a word with its meaning.

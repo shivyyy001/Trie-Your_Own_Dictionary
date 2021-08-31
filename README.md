@@ -72,7 +72,7 @@ Until user chooses Exit option , the program will keep running and keep performi
 
 
 #### About Trie.h file and its working :
-Trie.h file contains all the Functions of Trie data structure that are implemented . These functions include Adding a word with its meaning , Searching a word , Deleting a word , Printing the meaning of a word , Auto-Completing a prefix word with different choices of words present in Trie , Printing all word with their meaning that are currently present in Trie. 
+Trie.h file contains all the Functions of Trie data structure that are implemented . These functions include Inserting a word with its meaning , Searching a word , Deleting a word , Printing the meaning of a word , Auto-Completing a prefix word with different choices of words present in Trie , Printing all words with their meaning that are currently present in Trie. 
 
 ##### Details/Specifications of Trie.h file :
 

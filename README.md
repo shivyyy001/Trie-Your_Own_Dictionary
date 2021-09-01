@@ -48,14 +48,14 @@ ___
      - Auto Complete feature implementation , which works through pattern matching.
      - Printing the meaning of a word , after searching.
      - Printing all words with their meaning , present in the dictionary.
-- Making it as a library for user , as there is no inbuilt library for Tries data structure in any of the programming languages.
+- Making it as a helper file for user , as there is no inbuilt file for Tries data structure in any of the programming languages.
 - Performing every operation in efficient runtime complexity and efficient space complexity.
 
 ___
 
 ### Design and Specifications :
 Created 3 files , one is Trie.c file which contains Trie data structure implementation , and the second is Main_Function.c file which contains the main function to use Trie.c file and the last is Trie_declarations.h file which has declaration for every function used in Trie.c file . <br>
-Trie.c file was included in Main_Function.c file like this : <b> ``` #include "Trie.c" ``` </b> . After including it any function implemented for trie in Trie.c file can be used in Main_Function.c file. <b><i> That's how Trie.c file works as a library file for us :smiley: </i></b>.
+Trie.c file was included in Main_Function.c file like this : <b> ``` #include "Trie.c" ``` </b> . After including it any function implemented for trie in Trie.c file can be used in Main_Function.c file. <b><i> That's how Trie.c file works as a helper file for us providing great features :smiley: </i></b>.
 
 #### About Main_Function.c file and its working :
 The Main_Function.c file contains the main function for the program which will let the user use the Trie.c file's functionality according to his need as the Trie.c file is included in Main_Function file as : ``` #include "Trie.c" ```.<br>

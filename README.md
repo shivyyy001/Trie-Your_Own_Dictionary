@@ -1,4 +1,4 @@
-# Library For Trie Data Structure - Your Own Dictionary.
+# Self-Made File for using Trie Data Structure - Your Own Dictionary.
 ### Description :
 ##### What is Trie ? 
 Trie is a type of search tree whose nodes stores the letters of alphabet generally , or it can contain any of the 256 characters (Except NULL '\0' character as it behaves as the Root Node of Trie). By using tries , searching complexities can be reduced. So basically it works like a dictionary storing words with its meaning in it which can be inserted , searched and deleted. It also helps in auto-complete and pattern matching algorithms.
@@ -54,11 +54,11 @@ ___
 ___
 
 ### Design and Specifications :
-Created 2 files , one is Trie.h file which contains Trie data structure implementation , and the other is Main_Function.c file which contains the main function to use Trie.h file. <br>
-Trie.h file was included in Main_Function.c file like this : <b> ``` #include "Trie.h" ``` </b> . After including it any function implemented for trie in Trie.h file can be used in Main_Function.c file. <b><i> That's how Trie.h file works as a library file for us :smiley: </i></b>.
+Created 3 files , one is Trie.c file which contains Trie data structure implementation , and the second is Main_Function.c file which contains the main function to use Trie.c file and the last is Trie_declarations.h file which has declaration for every function used in Trie.c file . <br>
+Trie.c file was included in Main_Function.c file like this : <b> ``` #include "Trie.c" ``` </b> . After including it any function implemented for trie in Trie.c file can be used in Main_Function.c file. <b><i> That's how Trie.c file works as a library file for us :smiley: </i></b>.
 
 #### About Main_Function.c file and its working :
-The Main_Function.c file contains the main function for the program which will let the user use the Trie.h file's functionality according to his need as the Trie.h file is included in Main_Function file as : ``` #include "Trie.h" ```.<br>
+The Main_Function.c file contains the main function for the program which will let the user use the Trie.c file's functionality according to his need as the Trie.c file is included in Main_Function file as : ``` #include "Trie.c" ```.<br>
 So , when user will run the Main_Function.c file , the output screen will show different choice of functions to perform , like :
 - Add a word with its meaning in Trie Dictionary.
 - Search a word.
@@ -71,16 +71,20 @@ So , when user will run the Main_Function.c file , the output screen will show d
 Until user chooses Exit option , the program will keep running and keep performing the Operations that user ask it to by providing input.
 
 
-#### About Trie.h file and its working :
-Trie.h file contains all the Functions of Trie data structure that are implemented . These functions include Inserting a word with its meaning , Searching a word , Deleting a word , Printing the meaning of a word , Auto-Completing a prefix word with different choices of words present in Trie , Printing all words with their meaning that are currently present in Trie. 
+#### About Trie.c file and its working :
+Trie.c file contains all the Functions of Trie data structure that are implemented . These functions include Inserting a word with its meaning , Searching a word , Deleting a word , Printing the meaning of a word , Auto-Completing a prefix word with different choices of words present in Trie , Printing all words with their meaning that are currently present in Trie. 
 
-##### Details/Specifications of Trie.h file :
 
-- <i>The main part of Trie.h file is <b> ``` struct TrieNode ``` </b>, which is a structure for nodes of our Trie . It contains data of that node , children of that node , bool is_Terminal to check if a word ends at that node or not and string meaning to store meaning of the word which will be inserted.</i>
+#### About Trie_declarations.h :
+This file includes all the Declarations of those functions which are used in Trie.c file. 
+
+##### Details/Specifications of Trie.c file :
+
+- <i>The main part of Trie.c file is <b> ``` struct TrieNode ``` </b>, which is a structure for nodes of our Trie . It contains data of that node , children of that node , bool is_Terminal to check if a word ends at that node or not and string meaning to store meaning of the word which will be inserted.</i>
 - <i>The <b>```Child_Size```</b> is defined as 256 , which means every node can have at max 256 Child Nodes. NULL character can only be included if its the last character of the given word , else every node can have at max 255 Child Nodes except the NULL character node.</i>
 - <i>Child_Size is defined as 256 using : <b>``` #define Child_Size 256 ```</b>. So whereever we use Child_Size variable it means 256. </i>
-##### Below is the Detailed Explanation of each function in Trie.h file :
-| Function  | Description | Function name in Trie.h file | Return Type |
+##### Below is the Detailed Explanation of each function in Trie.c file :
+| Function  | Description | Function name in Trie.c file | Return Type |
 |   :---:   |    :---:    |         :---:         |     :--:    |
 |Return Trie Node Object|This function takes a parameter as character val , creates an object of TrieNode structure , sets its data to val , sets its is_Terminal to false , initializes the meaning string for that object, makes every child of that object as NULL initially , and hence returns the object to main function for initialization of root of our Trie.|returnTrie_Object()|struct TrieNode * |
 |Insert Word with its meaning|This function takes 4 parameters as root of our Trie , string word to be inserted , pos variable to traverse word and string meaning which is to be inserted corresponding to the word . This function inserts the word with its meaning in our Trie if its not present but if its present then this function is used to change the meaning of that word to latest meaning that we provided. |insert_word()|void|
@@ -103,13 +107,13 @@ ___
 - In case of Online IDE   -> upload both files on Online IDE , Compile both files , and Run the Main_Function.c file to execute.
 
 ### Steps to Compile and Run in VI Editor in Linux :
-###### For Trie.h file ->
-- Create a file named Trie.h in your Linux Machine using the following command :<br>
-``` vim Trie.h ```.
-- Go to insert mode in your file by pressing ``` i ``` and then copy the content of Trie.h file from this repository and paste in that file which you have just created.
+###### For Trie.c file ->
+- Create a file named Trie.c in your Linux Machine using the following command :<br>
+``` vim Trie.c ```.
+- Go to insert mode in your file by pressing ``` i ``` and then copy the content of Trie.c file from this repository and paste in that file which you have just created.
 - Save your file using the following command :<br>
 ``` Press Esc key ``` to go to Command mode. Then type ``` :wq ``` and ``` press Enter key ``` to save the file.
-- Compile your file using command : ``` gcc Trie.h ```.
+- Compile your file using command : ``` gcc Trie.c ```.
 
 ###### For Main_Function.c file ->
 - Next Create a file named Main_Function.c in your Linux Machine using the following command :<br>

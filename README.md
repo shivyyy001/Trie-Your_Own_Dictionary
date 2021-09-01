@@ -75,7 +75,7 @@ Until user chooses Exit option , the program will keep running and keep performi
 Trie.c file contains all the Functions of Trie data structure that are implemented . These functions include Inserting a word with its meaning , Searching a word , Deleting a word , Printing the meaning of a word , Auto-Completing a prefix word with different choices of words present in Trie , Printing all words with their meaning that are currently present in Trie. 
 
 
-#### About Trie_declarations.h :
+#### About Trie_declarations.h file :
 This file includes all the Declarations of those functions which are used in Trie.c file. 
 
 ##### Details/Specifications of Trie.c file :

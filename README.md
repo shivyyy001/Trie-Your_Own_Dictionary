@@ -1,7 +1,7 @@
 # Trie Data Structure - Your Own Dictionary.
 ### Description :
 ##### What is Trie ? 
-Trie is a type of search tree whose nodes stores the letters of alphabet generally , or it can contain any of the 256 characters (Except NULL '\0' character as it behaves as the Root Node of Trie). By using tries , searching complexities can be reduced. So basically it works like a dictionary storing words with its meaning in it which can be inserted , searched and deleted. It also helps in auto-complete and pattern matching algorithms.
+Trie is a type of search tree whose nodes stores the letters of alphabet generally , or it can contain any of the 256 characters (Except NULL '\0' character as it behaves as the Root Node of Trie). By using tries , searching complexities can be reduced. So basically it works like a dictionary storing words with its meaning in it which can be inserted , searched and deleted. It also helps in auto-complete and pattern matching algorithms and is also used in spell checkers or Auto-correct.
 
 ###### This is how it looks like and should be visualized ->
 <pre>
@@ -36,7 +36,7 @@ ___
 
 ### About Idea :
 - The main source of inspiration was Search Engines. 
-- There was keenness to know how auto-complete , or pattern maching in search engines actually work behind the scene.
+- There was keenness to know how auto-complete , or pattern maching in search engines and spell checkers actually work behind the scene.
 - The idea was to implement something productive for users which helps them and also makes them keen to know more about it.
 - To help user in learning new words with their meanings while playing around with such a dictionary.
 ___
@@ -48,6 +48,7 @@ ___
      - Auto Complete feature implementation , which works through pattern matching.
      - Printing the meaning of a word , after searching.
      - Printing all words with their meaning , present in the dictionary.
+     - Check and refine a word to spell it correct according to similar words present in dictionary.
 - Making it as a helper file for user , as there is no inbuilt file for Tries data structure in any of the programming languages.
 - Performing every operation in efficient runtime complexity and efficient space complexity.
 
@@ -67,9 +68,19 @@ So , when user will run the Main_Function.c file , the output screen will show d
 - Print meaning of a word.
 - Auto-complete a prefix word with different choices of words present in Trie Dictionary.
 - Print all words with their meaning that are currently present in Trie Dictionary.
+- Check and refine a word to spell it correct according to similar words present in dictionary.
 - Exit.
 
 Until user chooses Exit option , the program will keep running and keep performing the Operations that user ask it to by providing input.
+
+##### Details/Specifications of Main_Function.c file :
+
+###### Below is the Detailed Explanation of each function in Main_Function.c file :
+| Function  | Description | Function name in Main_Function.c file | Return Type |
+|   :---:   |    :---:    |         :---:         |     :--:    |
+|Take meaning as input|This function takes a single parameter as a string meaning and is used to take it as input from user. It can be a multi-word meaning string which you will enter.|take_meaning_input()|void|
+|Taking a word as input|This function takes a single parameter as a string word and is used to take it as input from user. It can only be a single word.|take_word_input()|void|
+|Main function|This is the main part of our program. Here we get plenty of choices to perform an operation while working with tries.|main()|int|
 
 
 #### About Trie.c file and its working :

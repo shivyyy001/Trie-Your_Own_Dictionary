@@ -1,4 +1,4 @@
-# Self-Made File for using Trie Data Structure - Your Own Dictionary.
+# Trie Data Structure - Your Own Dictionary.
 ### Description :
 ##### What is Trie ? 
 Trie is a type of search tree whose nodes stores the letters of alphabet generally , or it can contain any of the 256 characters (Except NULL '\0' character as it behaves as the Root Node of Trie). By using tries , searching complexities can be reduced. So basically it works like a dictionary storing words with its meaning in it which can be inserted , searched and deleted. It also helps in auto-complete and pattern matching algorithms.

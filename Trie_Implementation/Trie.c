@@ -153,9 +153,20 @@ void delete_word(struct TrieNode *root , char *str , int pos)
     // if reached at end of word make its isTerminal = false and return.
     if(str[pos] == '\0')
     {
-        printf("'%s' deleted from your Trie dictionary. \n" , str);
-        root->isTerminal = false;
-        return;
+	// if the word is present make its isTerminal = false and return.
+        if(root->isTerminal == true)
+        {
+            printf("'%s' deleted from your Trie dictionary. \n" , str);
+            root->isTerminal = false;
+        }
+
+	// else if the word is not present.
+        else
+        {
+            printf("There is no such word present in your Trie dictionary to be deleted. \n");
+        }
+        
+	return;
     }
     
     // making a child node.

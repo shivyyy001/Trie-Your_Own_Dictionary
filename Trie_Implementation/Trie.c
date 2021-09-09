@@ -278,7 +278,7 @@ void auto_complete(struct TrieNode *root , char *word)
     // making an empty string.
     char str[Child_Size];
     
-    // if temp is no NULL then pass temp as root in print_for_autocomplete function to auto_complete the word.
+    // if temp is not NULL then pass temp as root in print_for_autocomplete function to auto_complete the word.
     if(temp != NULL)
     {
         print_for_autocomplete(temp , word , str , 0);
@@ -293,7 +293,17 @@ void print_meaning(struct TrieNode *root , char *str , int pos)
     // if reached at end of word then print its meaning.
     if(str[pos] == '\0')
     {
-        printf("The meaning of '%s' : %s \n" , str , root->meaning);
+	// if root's isTerminal is true means that word is present , hence print its meaning.
+        if(root->isTerminal == true)
+        {
+            printf("The meaning of '%s' : %s \n" , str , root->meaning);
+        }
+
+	// else that word is not present.
+        else
+        {
+            printf("There is no such word present in your Trie dictionary \n");
+        }
         return;
     }
     

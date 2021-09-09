@@ -486,7 +486,7 @@ void refine_incorrect(struct TrieNode *root , char *word , int pos)
     // else no similar word is present yet.
     else
     {
-        printf("No word either same or similar to %s found in your Trie dictionary \n" , word);
+        printf("No word either same or similar to '%s' found in your Trie dictionary \n" , word);
     }
 }
 

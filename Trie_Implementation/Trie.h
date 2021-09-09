@@ -1,4 +1,4 @@
-/* Header file which contains Declaration of all functions implemented in Trie.c file */
+/* Header file which contains Declaration of all functions implemented in Trie.c file. */
 
 
 // including stdbool.h to include bool , to be used as return type.

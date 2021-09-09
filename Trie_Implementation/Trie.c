@@ -48,11 +48,13 @@ struct TrieNode *returnTrie_Object(char val)
 void assign_meaning(struct TrieNode *root , char *mean)
 {
     int len = strlen(mean);
-    
-    for(int i = 0; i < len ; i++)
+    int i = 0; 
+    for(i = 0; i < len ; i++)
     {
         root->meaning[i] = mean[i];
     }
+
+    root->meaning[i] = '\0';
 }
 
 
